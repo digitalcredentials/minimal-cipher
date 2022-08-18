@@ -1,5 +1,5 @@
 {
-  "name": "@digitalbazaar/minimal-cipher",
+  "name": "@digitalcredentials/minimal-cipher",
   "version": "5.1.1-0",
   "description": "Minimal encryption/decryption JWE library.",
   "license": "BSD-3-Clause",
@@ -26,8 +26,8 @@
     "@noble/ed25519": "^1.6.1",
     "@stablelib/chacha": "^1.0.1",
     "@stablelib/chacha20poly1305": "^1.0.1",
-    "base58-universal": "^2.0.0",
-    "base64url-universal": "^2.0.0"
+    "@digitalcredentials/base58-universal": "^1.0.1",
+    "@digitalcredentials/base64url-universal": "^2.0.2"
   },
   "devDependencies": {
     "@digitalbazaar/did-io": "^2.0.0",
@@ -56,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/minimal-cipher"
+    "url": "https://github.com/digitalcredentials/minimal-cipher"
   },
   "keywords": [
     "cipher",
@@ -74,9 +74,9 @@
     "url": "https://digitalbazaar.com/"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/minimal-cipher/issues"
+    "url": "https://github.com/digitalcredentials/minimal-cipher/issues"
   },
-  "homepage": "https://github.com/digitalbazaar/minimal-cipher",
+  "homepage": "https://github.com/digitalcredentials/minimal-cipher",
   "c8": {
     "reporter": [
       "lcov",

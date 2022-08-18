@@ -1,4 +1,4 @@
-# Minimal Cipher _(@digitalbazaar/minimal-cipher)_
+# Minimal Cipher _(@digitalcredentials/minimal-cipher)_
 
 Minimal encryption/decryption [JWE](https://tools.ietf.org/html/rfc7516)
 library, secure algs only, browser-compatible.
@@ -50,7 +50,7 @@ APIs, including Web KMS (TODO: citation needed).
 To install locally (for development):
 
 ```
-git clone https://github.com/digitalbazaar/minimal-cipher.git
+git clone https://github.com/digitalcredentials/minimal-cipher.git
 cd minimal-cipher
 npm install
 ```
@@ -60,7 +60,7 @@ npm install
 Pick a Cipher interface (`recommended` or `fips`) and create an instance:
 
 ```js
-import {Cipher} from '@digitalbazaar/minimal-cipher';
+import {Cipher} from '@digitalcredentials/minimal-cipher';
 
 const cipher = new Cipher(); // by default {version: 'recommended'}
 ```
@@ -86,8 +86,8 @@ public/private key pairs that will be used to encrypt/decrypt the message):
 const keyAgreementKey = await fetchFromSomewhere();
 
 // or derive them from an existing Ed25519 signing key
-import {X25519KeyAgreementKey2020} from '@digitalbazaar/x25519-key-agreement-key-2020';
-import {Ed25519VerificationKey2020} from '@digitalbazaar/ed25519-verification-key-2020';
+import {X25519KeyAgreementKey2020} from '@digitalcredentials/x25519-key-agreement-key-2020';
+import {Ed25519VerificationKey2020} from '@digitalcredentials/ed25519-verification-key-2020';
 const keyPair = await Ed25519VerificationKey2020.generate();
 
 const keyAgreementKey = X25519KeyPair.fromEd25519VerificationKey2020({keyPair});
@@ -180,11 +180,6 @@ PRs accepted.
 
 If editing the README, please conform to the
 [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
-
-## Commercial Support
-
-Commercial support for this library is available upon request from
-Digital Bazaar: support@digitalbazaar.com
 
 ## License
 
