@@ -5,6 +5,7 @@
   "license": "BSD-3-Clause",
   "type": "module",
   "exports": "./lib/index.js",
+  "main": "./lib/index.js",
   "browser": {
     "./lib/algorithms/c20p.js": "./lib/algorithms/c20p-browser.js",
     "./lib/algorithms/x25519-helper.js": "./lib/algorithms/x25519-helper-browser.js",
