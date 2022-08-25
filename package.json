@@ -10,6 +10,9 @@
     "./lib/algorithms/x25519-helper.js": "./lib/algorithms/x25519-helper-browser.js",
     "./lib/crypto.js": "./lib/crypto-browser.js"
   },
+  "react-native": {
+    "./lib/crypto.js": "./lib/crypto-react-native.js"
+  },
   "files": [
     "lib/**/*.js"
   ],
@@ -27,7 +30,8 @@
     "@stablelib/chacha": "^1.0.1",
     "@stablelib/chacha20poly1305": "^1.0.1",
     "@digitalcredentials/base58-universal": "^1.0.1",
-    "@digitalcredentials/base64url-universal": "^2.0.2"
+    "@digitalcredentials/base64url-universal": "^2.0.2",
+    "isomorphic-webcrypto": "^2.3.8"
   },
   "devDependencies": {
     "@digitalbazaar/did-io": "^2.0.0",
@@ -40,7 +44,6 @@
     "eslint-config-digitalbazaar": "^3.0.0",
     "eslint-plugin-jsdoc": "^39.3.2",
     "eslint-plugin-unicorn": "^42.0.0",
-    "isomorphic-webcrypto": "^2.3.8",
     "karma": "^6.3.20",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^3.1.1",
