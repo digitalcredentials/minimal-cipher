@@ -32,7 +32,7 @@
     "@stablelib/chacha20poly1305": "^1.0.1",
     "@digitalcredentials/base58-universal": "^1.0.1",
     "@digitalcredentials/base64url-universal": "^2.0.2",
-    "isomorphic-webcrypto": "^2.3.8"
+    "@digitalcredentials/isomorphic-webcrypto": "git+https://git@github.com/digitalcredentials/isomorphic-webcrypto#update-msrcrypto"
   },
   "devDependencies": {
     "@digitalbazaar/did-io": "^2.0.0",
