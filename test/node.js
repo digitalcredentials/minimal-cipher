@@ -1,6 +1,6 @@
 // WebCrypto polyfill if needed
 import crypto from 'node:crypto';
-import webcrypto from 'isomorphic-webcrypto';
+import webcrypto from '@digitalcredentials/isomorphic-webcrypto';
 
 if(!crypto.webcrypto) {
   crypto.webcrypto = webcrypto;
